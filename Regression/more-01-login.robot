@@ -36,4 +36,4 @@ login
 More
     sleep   3
     AppiumLibrary.Swipe     start_x=977     start_y=2228    offset_x=977    offset_y=2228
-    
+    Close Application
