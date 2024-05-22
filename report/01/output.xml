@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.10 on darwin)" generated="2024-05-22T19:35:30.133245" rpa="false" schemaversion="5">
+<suite id="s1" name="More-01-Login" source="/Users/kawinpop/workspace/tpc-new-app/Regression/more-01-login.robot">
+<test id="s1-t1" name="Open Android app" line="16">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>noReset=${noReset}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" start="2024-05-22T19:35:30.379562" elapsed="8.272100"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:35:41.652981" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:35:38.652233" elapsed="3.000870"/>
+</kw>
+<status status="PASS" start="2024-05-22T19:35:30.378698" elapsed="11.274682"/>
+</test>
+<test id="s1-t2" name="login" line="20">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-05-22T19:35:41.654157" elapsed="1.444180"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-22T19:35:43.099868" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Sign in"]'.</msg>
+<arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:35:43.098573" elapsed="0.976407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:35:47.075667" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:35:44.075261" elapsed="3.000587"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-22T19:35:47.078650" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]'.</msg>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:35:47.076244" elapsed="0.157634"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:35:50.234698" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:35:47.234271" elapsed="3.000574"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-05-22T19:35:50.236781" level="INFO">Typing text 'aor.testapptpc@ismilebot.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]'</msg>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]</arg>
+<arg>aor.testapptpc@ismilebot.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:35:50.235176" elapsed="0.095843"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:35:53.331559" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:35:50.331263" elapsed="3.000496"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-22T19:35:53.334314" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]'.</msg>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:35:53.332126" elapsed="0.340899"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:35:56.674039" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:35:53.673343" elapsed="3.000930"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-05-22T19:35:56.677603" level="INFO">Typing text 'Aa123456' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]'</msg>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]</arg>
+<arg>Aa123456</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:35:56.674885" elapsed="0.097240"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:35:59.775048" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:35:56.772413" elapsed="3.002875"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-22T19:35:59.778581" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View'.</msg>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:35:59.775863" elapsed="1.069253"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:36:05.846555" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:36:00.845376" elapsed="5.001433"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-22T19:36:05.850039" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Sign in"]'.</msg>
+<arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-22T19:36:05.847356" elapsed="3.163178"/>
+</kw>
+<status status="PASS" start="2024-05-22T19:35:41.653654" elapsed="27.357110"/>
+</test>
+<test id="s1-t3" name="More" line="36">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T19:36:12.011650" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T19:36:09.011276" elapsed="3.000531"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=977</arg>
+<arg>start_y=2228</arg>
+<arg>offset_x=977</arg>
+<arg>offset_y=2228</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-05-22T19:36:12.012168" elapsed="1.047404"/>
+</kw>
+<status status="PASS" start="2024-05-22T19:36:09.010978" elapsed="4.061781"/>
+</test>
+<status status="PASS" start="2024-05-22T19:35:30.134953" elapsed="42.938721"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="More-01-Login">More-01-Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
