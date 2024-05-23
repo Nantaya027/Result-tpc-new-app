@@ -55,4 +55,3 @@ logout
     sleep   5
     AppiumLibrary.Click Element     xpath=//android.view.View[@content-desc="Sign out"]
     Close Application
-    a
