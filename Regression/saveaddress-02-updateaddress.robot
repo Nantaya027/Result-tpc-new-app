@@ -40,8 +40,11 @@ More
 Save Address
     sleep   3
     AppiumLibrary.Click Element     xpath=//android.view.View[@content-desc="Saved Addresses"]
+    sleep   5
+    AppiumLibrary.Wait Until Element Is Visible     xpath=//android.widget.ImageView[2]
+    AppiumLibrary.Click Element     xpath=//android.widget.ImageView[2]
     sleep   3
-    AppiumLibrary.Click Element     xpath=//android.widget.ImageView[@content-desc="The parq Default 88, รัชดาภิเษก, Khlong Toei, Khlong Toei, Bangkok, 10110"]/android.view.View[1]
+    AppiumLibrary.Click Element     xpath=//android.widget.EditText[3]
     sleep   3
     AppiumLibrary.Input Text        xpath=//android.widget.EditText[3]        the parq blog
     sleep   3

@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.9.10 on darwin)" generated="2024-05-23T15:36:34.905488" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.9.10 on darwin)" generated="2024-06-05T14:38:25.371627" rpa="false" schemaversion="5">
 <suite id="s1" name="Saveaddress-02-Updateaddress" source="/Users/kawinpop/workspace/tpc-new-app/Regression/saveaddress-02-updateaddress.robot">
 <test id="s1-t1" name="Open Android app" line="16">
 <kw name="Open Application" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot" owner="AppiumLibrary">
-<msg time="2024-05-23T15:36:39.897397" level="FAIL">No application is open</msg>
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" start="2024-05-23T15:36:39.895493" elapsed="0.008483">No application is open</status>
-</kw>
-<msg time="2024-05-23T15:36:39.905679" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-05-23T15:36:39.906062" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-</msg>
 <arg>${REMOTE_URL}</arg>
 <arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
 <arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
@@ -25,159 +17,181 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="FAIL" start="2024-05-23T15:36:35.098842" elapsed="4.807539">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-</status>
+<status status="PASS" start="2024-06-05T14:38:25.510461" elapsed="9.080170"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:38:37.591709" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.906766" elapsed="0.000048"/>
+<status status="PASS" start="2024-06-05T14:38:34.591135" elapsed="3.000688"/>
 </kw>
-<status status="FAIL" start="2024-05-23T15:36:35.098029" elapsed="4.809130">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-</status>
+<status status="PASS" start="2024-06-05T14:38:25.509557" elapsed="12.082513"/>
 </test>
 <test id="s1-t2" name="login" line="20">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot" owner="AppiumLibrary">
-<msg time="2024-05-23T15:36:39.909482" level="FAIL">No application is open</msg>
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" start="2024-05-23T15:36:39.908638" elapsed="0.002701">No application is open</status>
-</kw>
-<msg time="2024-05-23T15:36:39.913223" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-05-23T15:36:39.913599" level="FAIL">No application is open</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-05-23T15:36:39.908091" elapsed="0.005770">No application is open</status>
+<status status="PASS" start="2024-06-05T14:38:37.592667" elapsed="1.726522"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:38:39.320935" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Sign in"]'.</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.914291" elapsed="0.000066"/>
+<status status="PASS" start="2024-06-05T14:38:39.319446" elapsed="1.017253"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:38:43.337210" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.914741" elapsed="0.000058"/>
+<status status="PASS" start="2024-06-05T14:38:40.336942" elapsed="3.000410"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:38:43.339706" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]'.</msg>
 <arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.915216" elapsed="0.000048"/>
+<status status="PASS" start="2024-06-05T14:38:43.337671" elapsed="0.374005"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:38:46.713470" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.915468" elapsed="0.000028"/>
+<status status="PASS" start="2024-06-05T14:38:43.712244" elapsed="3.001377"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-06-05T14:38:46.716243" level="INFO">Typing text 'aor.testapptpc@ismilebot.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]'</msg>
 <arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]</arg>
 <arg>aor.testapptpc@ismilebot.com</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.915668" elapsed="0.000047"/>
+<status status="PASS" start="2024-06-05T14:38:46.714000" elapsed="0.111360"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:38:49.826620" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.916000" elapsed="0.000035"/>
+<status status="PASS" start="2024-06-05T14:38:46.825610" elapsed="3.001170"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:38:49.829090" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]'.</msg>
 <arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.916231" elapsed="0.000029"/>
+<status status="PASS" start="2024-06-05T14:38:49.827120" elapsed="0.147046"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:38:52.974936" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.916451" elapsed="0.000080"/>
+<status status="PASS" start="2024-06-05T14:38:49.974552" elapsed="3.000574"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-06-05T14:38:52.977860" level="INFO">Typing text 'Aa123456' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]'</msg>
 <arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]</arg>
 <arg>Aa123456</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.917054" elapsed="0.000117"/>
+<status status="PASS" start="2024-06-05T14:38:52.975612" elapsed="0.098529"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:38:56.075529" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.918099" elapsed="0.000120"/>
+<status status="PASS" start="2024-06-05T14:38:53.074407" elapsed="3.001266"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:38:56.077418" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View'.</msg>
 <arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.918732" elapsed="0.000217"/>
+<status status="PASS" start="2024-06-05T14:38:56.076064" elapsed="1.046851"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:02.124903" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.919627" elapsed="0.000065"/>
+<status status="PASS" start="2024-06-05T14:38:57.123316" elapsed="5.001829"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:39:02.128335" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Sign in"]'.</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:39.920042" elapsed="0.000104"/>
+<status status="PASS" start="2024-06-05T14:39:02.125678" elapsed="1.237932"/>
 </kw>
-<status status="FAIL" start="2024-05-23T15:36:39.907609" elapsed="0.013016">No application is open</status>
+<status status="PASS" start="2024-06-05T14:38:37.592314" elapsed="25.771794"/>
 </test>
 <test id="s1-t3" name="More" line="36">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T15:36:42.924049" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-06-05T14:39:06.365721" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T15:36:39.921653" elapsed="3.002644"/>
+<status status="PASS" start="2024-06-05T14:39:03.365337" elapsed="3.000515"/>
 </kw>
 <kw name="Swipe" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot" owner="AppiumLibrary">
-<msg time="2024-05-23T15:36:42.926538" level="FAIL">No application is open</msg>
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" start="2024-05-23T15:36:42.925594" elapsed="0.002279">No application is open</status>
-</kw>
-<msg time="2024-05-23T15:36:42.930155" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-05-23T15:36:42.930409" level="FAIL">No application is open</msg>
 <arg>start_x=977</arg>
 <arg>start_y=2228</arg>
 <arg>offset_x=977</arg>
 <arg>offset_y=2228</arg>
 <doc>Swipe from one point to another point, for an optional duration.</doc>
-<status status="FAIL" start="2024-05-23T15:36:42.924875" elapsed="0.005833">No application is open</status>
+<status status="PASS" start="2024-06-05T14:39:06.366253" elapsed="1.032928"/>
 </kw>
-<status status="FAIL" start="2024-05-23T15:36:39.921071" elapsed="3.009980">No application is open</status>
+<status status="PASS" start="2024-06-05T14:39:03.364720" elapsed="4.034780"/>
 </test>
 <test id="s1-t4" name="Save Address" line="40">
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:10.401756" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="FAIL" start="2024-05-23T15:36:42.931932" elapsed="1.908015">Execution terminated by signal</status>
+<status status="PASS" start="2024-06-05T14:39:07.400075" elapsed="3.001926"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:39:10.405330" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="Saved Addresses"]'.</msg>
 <arg>xpath=//android.view.View[@content-desc="Saved Addresses"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.840273" elapsed="0.000313"/>
+<status status="PASS" start="2024-06-05T14:39:10.402571" elapsed="0.145807"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>3</arg>
+<msg time="2024-06-05T14:39:15.549304" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.840786" elapsed="0.000029"/>
+<status status="PASS" start="2024-06-05T14:39:10.548671" elapsed="5.000818"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView[1]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-06-05T14:39:15.549925" elapsed="0.106885"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<arg>xpath=//android.widget.ImageView[@content-desc="The parq Default 88, รัชดาภิเษก, Khlong Toei, Khlong Toei, Bangkok, 10110"]/android.view.View[1]</arg>
+<msg time="2024-06-05T14:39:15.658324" level="INFO">Clicking element 'xpath=//android.widget.ImageView[1]'.</msg>
+<arg>xpath=//android.widget.ImageView[1]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.840984" elapsed="0.000027"/>
+<status status="PASS" start="2024-06-05T14:39:15.657042" elapsed="0.751402"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:19.409309" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.841173" elapsed="0.000026"/>
+<status status="PASS" start="2024-06-05T14:39:16.408731" elapsed="3.000820"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:39:19.412826" level="INFO">Clicking element 'xpath=//android.widget.EditText[3]'.</msg>
+<arg>xpath=//android.widget.EditText[3]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-06-05T14:39:19.410124" elapsed="0.119977"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:22.530652" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-05T14:39:19.530359" elapsed="3.000432"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-06-05T14:39:22.532879" level="INFO">Typing text 'the parq blog' into text field 'xpath=//android.widget.EditText[3]'</msg>
 <arg>xpath=//android.widget.EditText[3]</arg>
 <arg>the parq blog</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.841360" elapsed="0.000026"/>
+<status status="PASS" start="2024-06-05T14:39:22.531087" elapsed="0.099098"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:25.632986" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.841546" elapsed="0.000027"/>
+<status status="PASS" start="2024-06-05T14:39:22.630591" elapsed="3.002640"/>
 </kw>
 <kw name="Swipe" owner="AppiumLibrary">
 <arg>start_x=637</arg>
@@ -185,50 +199,46 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>offset_x=693</arg>
 <arg>offset_y=310</arg>
 <doc>Swipe from one point to another point, for an optional duration.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.841739" elapsed="0.000026"/>
+<status status="PASS" start="2024-06-05T14:39:25.633835" elapsed="1.067697"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:29.702207" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.841934" elapsed="0.000025"/>
+<status status="PASS" start="2024-06-05T14:39:26.701806" elapsed="3.000638"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:39:29.705173" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirm"]'.</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Confirm"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.842151" elapsed="0.000026"/>
+<status status="PASS" start="2024-06-05T14:39:29.702873" elapsed="0.156478"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-05T14:39:32.860330" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.842333" elapsed="0.000026"/>
+<status status="PASS" start="2024-06-05T14:39:29.859910" elapsed="3.000600"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-06-05T14:39:32.863594" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]'.</msg>
 <arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2024-05-23T15:36:44.842518" elapsed="0.000025"/>
+<status status="PASS" start="2024-06-05T14:39:32.861016" elapsed="0.139684"/>
 </kw>
-<status status="FAIL" start="2024-05-23T15:36:42.931426" elapsed="1.911361">Execution terminated by signal</status>
+<status status="PASS" start="2024-06-05T14:39:07.399735" elapsed="25.601441"/>
 </test>
-<test id="s1-t5" name="logout" line="54">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2024-05-23T15:36:44.843069" elapsed="0.000394">Test execution stopped due to a fatal error.</status>
-</test>
-<status status="FAIL" start="2024-05-23T15:36:34.906824" elapsed="9.937155"/>
+<status status="PASS" start="2024-06-05T14:38:25.373125" elapsed="67.628878"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="5" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="4" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat pass="0" fail="5" skip="0" id="s1" name="Saveaddress-02-Updateaddress">Saveaddress-02-Updateaddress</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Saveaddress-02-Updateaddress">Saveaddress-02-Updateaddress</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-23T15:36:39.905679" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-05-23T15:36:39.913223" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-05-23T15:36:42.930155" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
