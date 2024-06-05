@@ -41,21 +41,9 @@ Save Address
     sleep   3
     AppiumLibrary.Click Element     xpath=//android.view.View[@content-desc="Saved Addresses"]
     sleep   3
-    AppiumLibrary.Click Element     xpath=//android.view.View[@content-desc="Add new address"]
+    AppiumLibrary.Click Element     xpath=//android.widget.ImageView[@content-desc="The parq Default 88, รัชดาภิเษก, Khlong Toei, Khlong Toei, Bangkok, 10110"]/android.view.View[1]
     sleep   3
-    AppiumLibrary.Swipe     start_x=279     start_y=159    offset_x=257    offset_y=159
-    sleep   3
-    AppiumLibrary.Input Text        xpath=//android.widget.EditText        The parq
-    sleep   3
-    AppiumLibrary.Click Element     xpath=//android.view.View[@content-desc="The PARQ"]
-    sleep   3
-    AppiumLibrary.Click Element     xpath=//android.widget.Button[@content-desc="Confirm this address"]
-    sleep   3
-    AppiumLibrary.Click Element     xpath=//android.widget.Button[@content-desc="Choose this location"]
-    sleep   3
-    AppiumLibrary.Click Element     xpath=//android.widget.EditText[2]
-    sleep   3
-    AppiumLibrary.Input Text        xpath=//android.widget.EditText[2]     The parq
+    AppiumLibrary.Input Text        xpath=//android.widget.EditText[3]        the parq blog
     sleep   3
     AppiumLibrary.Swipe     start_x=637     start_y=1446    offset_x=693    offset_y=310
     sleep   3
@@ -64,6 +52,6 @@ Save Address
     AppiumLibrary.Click Element     xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]
 
 logout
-    sleep   10
+    sleep   5
     AppiumLibrary.Click Element     xpath=//android.view.View[@content-desc="Sign out"]
     Close Application
